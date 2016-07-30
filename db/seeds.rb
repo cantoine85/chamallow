@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Create a song
+# Oasis chords : f#m7 A Esus4 Bm7sus4 Dadd9
+chords = ["F#m7", "A", "Esus4", "Bm7sus4", "Dadd9"]
+chords.each do |chord|
+  Chord.create(name:chord)
+end
+song = Song.create(title: "Wonderwall", author: "Oasis")
+MusicScore.create(song: song, key:"A")
+
+
