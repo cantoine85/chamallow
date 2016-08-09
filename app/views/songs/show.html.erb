@@ -1,62 +1,39 @@
 <div class="banner">
-  <h1>
-    <%= @song.title %> by <%= @song.author %>
-  </h1>
-</div>
-<div class="wrapper">
-  <div class="container">
-    <% @chords.each do |chord| %>
-      <div class="chord-card">
-        <%= chord %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div class="wrapper">
-  <div class="container">
-    <% @chords.each do |chord| %>
-      <div class="chord-details-card">
-        <%= chord %>
-      </div>
-    <% end %>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <% @lyrics.each do |lyric| %>
-    <div class="col-xs-6 col-sm-4">
-      <div class="lyrics-part">
-        <p><%= lyric.html_safe %></p>
-      </div>
-    </div>
-    <% end %>
-  </div>
+  <%= image_tag "logo" %>
+  <h1>Tastime</h1>
 </div>
 
-<div class="container-flex">
-    <% @lyrics.each do |lyric| %>
-      <div class="lyrics-part">
-        <p><%= lyric.html_safe %></p>
-    </div>
-    <% end %>
+<div class="banner">
+  <%= image_tag "logo" %>
+  <h1>Tastime</h1>
 </div>
-<!-- <div class="wrapper">
-  <div class="container">
-    <div class="title">
-      <h1>
-        <%= @song.title %> by <%= @song.author %>
-      </h1>
-    </div>
-    <div class="banner">
+
+
+<!-- <div class="chords-dashboard">
+
+</div> -->
+
+<main>
+
+  <div class="chords-banner">
       <% @chords.each do |chord| %>
-        <div class="chord-card">
+        <div class="sticker">
           <%= chord %>
         </div>
       <% end %>
-    </div>
-    <p><%= @song.lyrics.html_safe %></p>
   </div>
-</div> -->
+
+  <div class="song-card">
+    <div class="song-card-header">
+      <h1><%= @song.title %></h1>
+      <h2>by <%= @song.author %></h2>
+      <%= image_tag "logo", class: "song-card-logo" %>
+    </div>
+    <div class="song-card-content">
+      <%= @lyrics.html_safe %>
+    </div>
+  </div>
+</main>
 
 
 

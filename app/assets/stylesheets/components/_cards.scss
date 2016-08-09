@@ -1,0 +1,38 @@
+.song-card {
+  background: white;
+  color: $gray-darker;
+  max-width: 700px;
+  margin: 30px auto 30px;
+  box-shadow: 2px 1px #cccccc;
+  padding: 10px 40px;
+
+  &-header {
+    position: relative;
+  }
+
+  h1 {
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: $red;
+  }
+
+  h2 {
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: $gray-darker;
+  }
+
+  &-logo {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    top: 0;
+  }
+}
+
+.song-thumbnail {
+
+}
