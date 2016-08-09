@@ -1,0 +1,72 @@
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+
+// Paddings
+.padded {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+// Backgrounds
+.bg-black {
+  background: #4a4a4a;
+}
+.bg-grey {
+  background: #aeaeae;
+}
+.bg-blue {
+  background: #00a3e1;
+}
+.bg-dark-blue {
+  background: #3b5998;
+}
+
+.banner {
+  padding: 75px;
+  background: #f07575;
+  text-align: center;
+  color: white;
+  width: 100%;
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 970px;
+  padding: 20px;
+}
+
+.chord-card {
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #f07575;
+  background: #f07575;
+}
+
+.chord-details-card {
+  color: #f07575;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #f07575;
+}
+
+.lyrics-part{
+  background-color: grey;
+  padding-bottom: 10px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+}
+

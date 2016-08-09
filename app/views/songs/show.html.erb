@@ -1,1 +1,64 @@
-<h1>Hello</h1>
+<div class="banner">
+  <h1>
+    <%= @song.title %> by <%= @song.author %>
+  </h1>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <% @chords.each do |chord| %>
+      <div class="chord-card">
+        <%= chord %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <% @chords.each do |chord| %>
+      <div class="chord-details-card">
+        <%= chord %>
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <% @lyrics.each do |lyric| %>
+    <div class="col-xs-6 col-sm-4">
+      <div class="lyrics-part">
+        <p><%= lyric.html_safe %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container-flex">
+    <% @lyrics.each do |lyric| %>
+      <div class="lyrics-part">
+        <p><%= lyric.html_safe %></p>
+    </div>
+    <% end %>
+</div>
+<!-- <div class="wrapper">
+  <div class="container">
+    <div class="title">
+      <h1>
+        <%= @song.title %> by <%= @song.author %>
+      </h1>
+    </div>
+    <div class="banner">
+      <% @chords.each do |chord| %>
+        <div class="chord-card">
+          <%= chord %>
+        </div>
+      <% end %>
+    </div>
+    <p><%= @song.lyrics.html_safe %></p>
+  </div>
+</div> -->
+
+
+
+
+

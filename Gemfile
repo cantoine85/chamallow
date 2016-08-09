@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'font-awesome-sass', '~> 4.6.2'
+gem 'simple_form'
+gem "autoprefixer-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
